@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100a1d">
+<title>As Prins</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:0 16px 50px;background:#100a1d;color:#f6f0ff;font-family:system-ui,-apple-system,sans-serif;
+background-image:radial-gradient(700px 500px at 10% -5%,#2d1a4d 0,transparent 60%),radial-gradient(700px 500px at 95% 0,#3d1b3a 0,transparent 55%),radial-gradient(600px 600px at 50% 110%,#1b2a4d 0,transparent 60%)}
+header{text-align:center;padding:26px 0 0}
+header p.c{color:#e6c88a;letter-spacing:12px;font-size:13px;margin:0 0 4px}
+h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(28px,8vw,46px);letter-spacing:.14em;text-transform:uppercase;margin:0;
+background:linear-gradient(180deg,#fff,#e9d5ff 55%,#c39bf0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:#a99cc7;font-size:13px;margin:8px 0 0}
+nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0 4px}
+.aba{background:none;border:1px solid rgba(255,255,255,.14);color:#a99cc7;padding:8px 14px;border-radius:99px;
+font:inherit;font-size:11px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.aba.on{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35)}
+.aba.ed{background:#e6c88a;color:#241a08;border-color:#e6c88a;font-weight:600}
+main{max-width:900px;margin:0 auto}
+.v{display:none}.v.on{display:block}
+#g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:18px}
+.k{border:1px solid rgba(255,255,255,.13);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.05);cursor:pointer;text-align:left;color:inherit;font:inherit;padding:0}
+.k:hover{border-color:rgba(255,255,255,.32)}
+.k .t{height:84px;display:grid;place-items:center;font-size:38px;position:relative}
+.k .b{padding:10px 13px 14px}
+.k h3{font-family:Georgia,serif;font-weight:400;font-size:17px;margin:0}
+.k small{color:#a99cc7;font-size:11px}
+.nv{display:block;width:100%;margin:18px 0 8px;padding:14px;border-radius:16px;background:none;
+border:1px dashed rgba(255,255,255,.22);color:#a99cc7;font:inherit;font-size:12px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.tp{text-align:center;color:#a99cc7;font-size:11.5px;line-height:1.6;margin:4px 0 18px}
+.vl{background:none;border:none;color:#a99cc7;font:inherit;font-size:12.5px;padding:12px 0;cursor:pointer}
+.hd{border-radius:22px;border:1px solid rgba(255,255,255,.14);padding:22px;margin-top:8px}
+.av{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-size:30px;background:rgba(10,6,18,.45);border:1px solid rgba(255,255,255,.25)}
+.hd h2{font-family:Georgia,serif;font-weight:400;font-size:30px;margin:12px 0 2px}
+.hd .r{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+.hd .f{font-family:Georgia,serif;font-style:italic;font-size:15px;line-height:1.5;margin:14px 0 0;color:#fff}
+.bl{border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:16px;margin-top:11px;background:rgba(255,255,255,.035)}
+.bl h4{margin:0 0 8px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#e6c88a}
+.bl p{margin:0;font-size:14px;line-height:1.65;color:#e6dcff}
+.fi{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:13.5px;color:#e6dcff}
+.fi span{display:block;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#a99cc7;margin-bottom:2px}
+input[type=color]{width:100%;height:28px;border:1px solid rgba(255,255,255,.15);border-radius:8px;background:none;padding:2px}
+.q{font-family:Georgia,serif;font-size:17px;margin:0 0 10px}
+.o{display:block;width:100%;text-align:left;padding:13px 16px;margin-bottom:8px;border-radius:13px;
+background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);color:#e6dcff;font:inherit;font-size:14px;cursor:pointer}
+.o:hover{border-color:rgba(255,255,255,.35)}
+.res{text-align:center;padding:26px 18px;border-radius:22px;border:1px solid rgba(255,255,255,.14);margin-top:18px}
+.res .gr{font-size:50px}
+.res h3{font-family:Georgia,serif;font-weight:400;font-size:24px;margin:8px 0 4px}
+.bt{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.28);color:#fff;padding:12px 20px;
+border-radius:99px;font:inherit;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;margin-top:14px}
+.bt.dg{border-color:rgba(255,120,140,.5);color:#ffb3c1}
+.rp{display:flex;justify-content:center;margin:16px 0}
+.rp button{display:none}body.ed .rp button{display:block}
+[contenteditable=true]{outline:1px dashed #e6c88a;border-radius:4px}
+</style></head><body>
+<header>
+<p class="c">✦ ✦ ✦</p>
+<h1 id="T" data-k="titulo">As Prins</h1>
+<p class="sub" id="S" data-k="subtitulo">as nossas personagens num lugar só</p>
+<nav>
+<button class="aba on" data-v="salao">Salão</button>
+<button class="aba" data-v="quiz">Qual prins você é?</button>
+<button class="aba" id="E">✎ Editar</button>
+</nav></header>
+<main>
+<section id="v1" class="v on"><div id="g"></div>
+<button class="nv" id="N">+ nova prins</button>
+<p class="tp">Toque num cartão para abrir a ficha.<br>Use <b>✎ Editar</b> para escrever os dados reais — tudo fica salvo.</p></section>
+<section id="v2" class="v"></section>
+<section id="v3" class="v"><div id="qz"></div></section>
+</main>
+<script>
+var CH='asprins1';
+var D={titulo:'As Prins',subtitulo:'as nossas personagens num lugar só',P:[
+{id:1,e:'👑',c:'#8b5cf6',n:'Aurora',r:'Reino de Vidro',ap:'Rora',an:'12 de março',el:'Luz',d:'Ver o que os outros escondem',
+pe:'Calma por fora, tempestade por dentro. Fala pouco e observa tudo.',hi:'Nasceu na torre mais alta e desceu por escolha própria.',gs:'Chá gelado, playlists tristes, madrugadas de conversa',ng:'Gente que fala alto de manhã',fr:'"Se é para brilhar, que seja ofuscante."',re:'Irmã de coroa da Bianca; rival da Luna em tudo.'},
+{id:2,e:'🌙',c:'#3b82f6',n:'Luna',r:'Corte da Maré',ap:'Lu',an:'3 de agosto',el:'Água',d:'Se transformar conforme a companhia',
+pe:'Barulhenta, engraçada e impossível de odiar. Atrasada em tudo, mas o ponto alto do dia.',hi:'Cresceu em sete cidades e trouxe o costume de comemorar tudo com bolo.',gs:'Karaokê, doces caros, drama bem contado',ng:'Silêncio constrangedor',fr:'"Se ninguém começa, eu começo."',re:'Melhor amiga da Bianca desde a primeira briga.'},
+{id:3,e:'🔥',c:'#ef4444',n:'Bianca',r:'Fortaleza de Brasa',ap:'Bia',an:'27 de junho',el:'Fogo',d:'Força desproporcional',
+pe:'Protetora até o osso. Resolve tudo no "deixa comigo" e cobra o favor por três meses.',hi:'A mais velha do grupo e a única que sabe consertar coisas.',gs:'Academia às 6h, comida apimentada, dirigir de noite',ng:'Injustiça',fr:'"Pode deixar. Eu resolvo."',re:'Irmã de coroa da Aurora.'},
+{id:4,e:'🌸',c:'#ec4899',n:'Íris',r:'Jardim Suspenso',ap:'Iri',an:'9 de novembro',el:'Terra',d:'Fazer tudo florescer',
+pe:'Doce de um jeito que engana. Tem o deboche mais afiado do grupo.',hi:'Foi ela quem decidiu que as quatro eram "as prins" e o nome pegou.',gs:'Flores secas, cheiro de chuva, cartas à mão',ng:'Pressa',fr:'"Tudo cresce no seu tempo."',re:'Amiga de infância da Bianca.'}]};
+var Q=[
+{q:'Chegou o convite para uma festa. Você:',o:[['Respondo em 3 segundos e escolho o look',1],['Confirmo e pergunto quem mais vai',2],['Digo que vou, mas chego depois das 23h',0],['Já penso no presente perfeito',3]]},
+{q:'Uma amiga chora no banheiro da festa. Você:',o:[['Sento no chão junto e fico até ela parar',2],['Faço ela rir do jeito mais errado',1],['Escuto em silêncio e guardo o segredo',0],['Levo água, casaco e resolvo o ambiente',3]]},
+{q:'Qual elogio te pega mais?',o:[['"Você é a mais engraçada do grupo"',1],['"Com você ninguém mexe com a gente"',2],['"Você entende sem eu falar"',0],['"Você deixa tudo mais bonito"',3]]},
+{q:'Seu maior defeito:',o:[['Guardo tudo até explodir',2],['Falo antes de pensar',1],['Finjo que não me importo',0],['Cuido de todos e esqueço de mim',3]]},
+{q:'Coroa ideal:',o:[['Violeta com brilho frio',0],['Azul de maré cheia',1],['Vermelho de brasa',2],['Rosa de pétala',3]]}];
+var st=car(), ed=false, rs={}, cu=null;
+function car(){try{var x=localStorage.getItem(CH);if(x){var j=JSON.parse(x);if(j&&j.P&&j.P.length)return j}}catch(e){}return JSON.parse(JSON.stringify(D))}
+function sv(){try{localStorage.setItem(CH,JSON.stringify(st))}catch(e){}}
+function sc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function cel(p,k,t){return '<'+t+' data-p="'+p.id+'" data-k="'+k+'">'+sc(p[k])+'</'+t+'>'}
+function grade(){
+ document.getElementById('T').textContent=st.titulo;
+ document.getElementById('S').textContent=st.subtitulo;
+ var g=document.getElementById('g');g.innerHTML='';
+ st.P.forEach(function(p){
+  var b=document.createElement('button');b.className='k';
+  b.innerHTML='<div class="t" style="background:linear-gradient(150deg,'+p.c+',rgba(255,255,255,.03))">'+sc(p.e)+'</div>'+
+   '<div class="b"><h3>'+sc(p.n)+'</h3><small>'+sc(p.r)+'</small><br><small>'+sc(p.an)+'</small></div>';
+  b.onclick=function(){ficha(p.id)};g.appendChild(b)});
+}
+function ficha(id){
+ var p=st.P.filter(function(x){return x.id==id})[0]; if(!p)return; cu=id;
+ var v=document.getElementById('v2');
+ v.innerHTML='<button class="vl" id="vb">← voltar ao salão</button>'+
+ '<div class="hd" style="background:linear-gradient(160deg,'+p.c+',rgba(255,255,255,.03) 65%)">'+
+ cel(p,'e','div').replace('data-k="e"','class="av" data-k="e"')+cel(p,'n','h2')+cel(p,'r','div').replace('data-k="r"','class="r" data-k="r"')+
+ cel(p,'fr','p').replace('data-k="fr"','class="f" data-k="fr"')+'</div>'+
+ '<div class="bl"><h4>Ficha</h4><div class="fi">'+
+ '<div><span>Apelido</span>'+cel(p,'ap','b')+'</div><div><span>Aniversário</span>'+cel(p,'an','b')+'</div>'+
+ '<div><span>Elemento</span>'+cel(p,'el','b')+'</div><div><span>Dom</span>'+cel(p,'d','b')+'</div>'+
+ '<div><span>Cor</span><input type="color" value="'+sc(p.c)+'" data-cor="'+p.id+'"></div></div></div>'+
+ '<div class="bl"><h4>Personalidade</h4>'+cel(p,'pe','p')+'</div>'+
+ '<div class="bl"><h4>História</h4>'+cel(p,'hi','p')+'</div>'+
+ '<div class="bl"><h4>Gosta</h4>'+cel(p,'gs','p')+'</div>'+
+ '<div class="bl"><h4>Não gosta</h4>'+cel(p,'ng','p')+'</div>'+
+ '<div class="bl"><h4>Relações</h4>'+cel(p,'re','p')+'</div>'+
+ '<div class="rp"><button class="bt dg" id="ap">remover esta prins</button></div>';
+ document.getElementById('vb').onclick=function(){ver('salao')};
+ var inp=v.querySelector('[data-cor]');
+ inp.oninput=function(){p.c=inp.value;sv();grade();
+  v.querySelector('.hd').style.background='linear-gradient(160deg,'+p.c+',rgba(255,255,255,.03) 65%)'};
+ document.getElementById('ap').onclick=function(){
+  if(st.P.length<2){alert('Precisa sobrar pelo menos uma prins.');return}
+  if(confirm('Remover '+p.n+'?')){st.P=st.P.filter(function(x){return x.id!=p.id});sv();grade();ver('salao')}};
+ ligar(v); ver('ficha');
+}
+function ligar(r){
+ r.querySelectorAll('[data-p]').forEach(function(el){
+  el.contentEditable=ed;
+  el.onblur=function(){
+   var p=st.P.filter(function(x){return x.id==el.dataset.p})[0]; if(!p)return;
+   p[el.dataset.k]=el.innerText.replace(/s+/g,' ').trim(); sv(); grade()}});
+}
+function quiz(){
+ var box=document.getElementById('qz'), n=Object.keys(rs).length;
+ if(n==Q.length){
+  var pt={};Object.keys(rs).forEach(function(k){var w=Q[k].o[rs[k]][1];pt[w]=(pt[w]||0)+1});
+  var m=0,mx=-1;for(var k in pt)if(pt[k]>mx){mx=pt[k];m=+k}
+  var p=st.P[m%st.P.length];
+  box.innerHTML='<div class="res" style="background:linear-gradient(160deg,'+p.c+',rgba(255,255,255,.03) 70%)">'+
+   '<div class="gr">'+sc(p.e)+'</div><h3>Você é '+sc(p.n)+'</h3>'+
+   '<div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8)">'+sc(p.r)+'</div>'+
+   '<p class="f" style="font-family:Georgia,serif;font-style:italic;font-size:15px">'+sc(p.fr)+'</p>'+
+   '<button class="bt" id="rf">refazer</button></div>';
+  document.getElementById('rf').onclick=function(){rs={};quiz()};return;
+ }
+ box.innerHTML='<div class="bl" style="margin-top:18px"><h4>Pergunta '+(n+1)+' de '+Q.length+'</h4>'+
+  '<p class="q">'+sc(Q[n].q)+'</p>'+Q[n].o.map(function(o,i){
+   return '<button class="o" data-i="'+i+'">'+sc(o[0])+'</button>'}).join('')+'</div>';
+ box.querySelectorAll('.o').forEach(function(b){b.onclick=function(){rs[n]=+b.dataset.i;quiz()}});
+}
+function ver(nome){
+ document.querySelectorAll('.v').forEach(function(s){s.classList.remove('on')});
+ var m={salao:'v1',ficha:'v2',quiz:'v3'}[nome];
+ document.getElementById(m).classList.add('on');
+ document.querySelectorAll('.aba[data-v]').forEach(function(a){a.classList.toggle('on',a.dataset.v==nome)});
+ window.scrollTo(0,0);
+}
+document.querySelectorAll('.aba[data-v]').forEach(function(a){
+ a.onclick=function(){ if(a.dataset.v=='quiz')quiz(); ver(a.dataset.v)}});
+document.getElementById('E').onclick=function(){
+ ed=!ed; document.body.classList.toggle('ed',ed); this.classList.toggle('ed',ed);
+ this.textContent=ed?'✓ Concluir':'✎ Editar';
+ document.querySelectorAll('[data-k]').forEach(function(el){el.contentEditable=ed});
+};
+['T','S'].forEach(function(id){
+ var el=document.getElementById(id);
+ el.onblur=function(){
+  var v=el.innerText.replace(/s+/g,' ').trim();
+  st[el.dataset.k]=v||D[el.dataset.k]; el.textContent=st[el.dataset.k]; sv()}});
+document.getElementById('N').onclick=function(){
+ var cs=['#8b5cf6','#3b82f6','#ef4444','#ec4899','#14b8a6','#f59e0b'];
+ var nv={id:Date.now(),e:'✨',c:cs[st.P.length%cs.length],n:'Prins '+(st.P.length+1),r:'Novo reino',
+  ap:'apelido',an:'dia e mês',el:'Elemento',d:'O dom dela',pe:'Personalidade...',hi:'História...',
+  gs:'O que ela ama',ng:'O que ela não suporta',fr:'"Uma frase marcante."',re:'Como ela se liga às outras'};
+ st.P.push(nv);sv();grade();ficha(nv.id)};
+grade();
+</script></body></html>
